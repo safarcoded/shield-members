@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f766e"><title>S.H.I.E.L.D. | Support Request Queue</title>
+  <link rel="stylesheet" href="support-requests.css">
+  <script type="module" src="support-requests.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <header class="top"><div class="brand"><span class="mark">S</span><div><small>STUDENT HELP INITIATIVE</small><h1>S.H.I.E.L.D.</h1></div></div><span class="flag">INTERNAL · ALPHA</span></header>
+    <section class="intro"><p class="kicker">PRIVATE OPERATIONS</p><h2>Support request queue</h2><p>Only the bootstrap administrator is authorized to view and update this queue in the first version.</p></section>
+    <section class="panel" id="authPanel"><h3>Administrator sign in</h3><p class="muted">Use the Firebase account whose role record is approved as admin.</p><form id="loginForm"><label for="email">Email address</label><input id="email" type="email" autocomplete="username" required><label for="password">Password</label><input id="password" type="password" autocomplete="current-password" required><button id="loginButton" type="submit">Sign in</button></form><p id="authMessage" class="message" role="status" aria-live="polite"></p></section>
+    <section id="queuePanel" class="panel" hidden><div class="heading"><div><h3>Incoming requests</h3><p class="muted">Treat each request confidentially. Do not copy identifying details into public messages.</p></div><button id="refreshButton" class="secondary" type="button">Refresh</button></div><p id="queueMessage" class="message" role="status" aria-live="polite"></p><div id="requests" class="requests"></div><button id="logoutButton" class="secondary" type="button">Sign out</button></section>
+    <aside class="warning"><strong>Development safeguard</strong><p>Do not use this alpha for live case handling until the access rules, privacy procedure, adult oversight and operational workflow have been reviewed and tested.</p></aside>
+  </main>
+</body>
+</html>
